@@ -1,10 +1,14 @@
-class Rectangle:
-    def __init__(self,width,length):
-        self.width=width
+class Shape:
+    def __init__(self):
+        self.area=0
+    def get_area(self):
+        return self.area
+class Rectangle(Shape):
+    def __init__(self,length,width):
         self.length=length
-    def area(self):
-        return self.length*self.width
-
-
-n=Rectangle(int(input()),int(input()))
-print(Rectangle.area(n))
+        self.width=width
+        self.area=self.length*self.width
+a=int(input())
+b=int(input())
+x = Rectangle(a, b)
+print(Shape.get_area(x))
