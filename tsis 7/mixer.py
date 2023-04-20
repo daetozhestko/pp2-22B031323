@@ -2,6 +2,9 @@ import pygame.mixer
 import pygame.time
 import pygame.event
 import pygame.locals
+import pygame
+pygame.init()
+
 pygame.mixer.init()
 pygame.time.set_timer(pygame.USEREVENT, 1000)
 playlist = ["song1.mp3", "song2.mp3", "song3.mp3"]

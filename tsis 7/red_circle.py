@@ -4,8 +4,8 @@ screen=pygame.display.set_mode((500,500))
 pygame.display.set_caption("SUPERHOT")
 done = True
 color=(255,0,0)
-x=150
-y=150
+x=300
+y=300
 speed=20
 clock=pygame.time.Clock()
 while done:
@@ -22,7 +22,7 @@ while done:
         x+=speed
     if pressed[pygame.K_LEFT] and x>speed+25:
         x-=speed
-    pygame.draw.circle(screen,color,(x,y),25)
+    pygame.draw.circle(screen,color,(x,y),50)
     pygame.display.flip()
     clock.tick(30)
         

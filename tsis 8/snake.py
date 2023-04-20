@@ -150,7 +150,7 @@ def main():
             food.location.x = random.randint(0, WIDTH // BLOCK_SIZE - 1)
             food.location.y = random.randint(0, HEIGHT // BLOCK_SIZE - 1)
             foods_eaten += 1
-            if foods_eaten == 1:
+            if foods_eaten == 3:
                 speed += 0.1
                 foods_eaten = 0
                 level += 1
